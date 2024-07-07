@@ -1,6 +1,6 @@
 /* Functions Declaration Examples */
 
-/* Example 1 */
+//Example 1
 
 /* function print(){
     console.log("Hello");
@@ -17,7 +17,7 @@ function hi() {
   console.log("Hello, how are you?");
 } */
 
-/* Example 2 */
+//Example 2
 
 /* function printName(name="name", lastname="lastname", no="0"){
     console.log("Hello", name, lastname, no);
@@ -27,7 +27,7 @@ printName("Carlos", "Roberto", "3")
 let lastname = "Roberto"
 printName(lastname) */
 
-/* Example 3 */
+//Example 3
 
 /* function numbers(n1,n2){
     console.log(arguments);
@@ -35,7 +35,7 @@ printName(lastname) */
 
 numbers(1,2,3,4,5,6,7,8,9,0) */
 
-/* Example 4 Return keyword*/
+//Example 4 Return keyword
 /* function ageCalculate(name, date){
     console.log("My name is", name,"my age", (2024-date));
     let age = 2024 - date
@@ -49,7 +49,7 @@ if (age > 30){
     console.log("You're at the top of soccer.");
 } */
 
-/* Example 5 İf-Return*/
+//Example 5 İf-Return
 
 /* function ageCalculate(name, date) {
   console.log("My name is", name, "my age", 2024 - date);
@@ -66,7 +66,7 @@ if (age > 30){
 const ronaldo=ageCalculate("Ronaldo",1985)
 console.log(ronaldo); */
 
-/* Example 6 circumference of the circle (2*pi*r)*/
+//Example 6 circumference of the circle (2*pi*r)
 
 
 /* function circle(r) {
@@ -75,7 +75,7 @@ console.log(ronaldo); */
 const result = circle(5)
 console.log(result.toFixed(2)) */
 
-/* Example 7 area of the circle*/
+//Example 7 area of the circle
 
 /* function circleArea(r){
     return 3.14*(r*r)
@@ -83,4 +83,14 @@ console.log(result.toFixed(2)) */
 const result = circleArea(5)
 console.log(result.toFixed(2)); */
 
-/* Example 8 */
+
+/* Function Expession (not Hoisting) */
+
+/* Example 1 */
+
+console.log("---Function Expression---");
+
+const namePrint=function(name){
+    console.log(name);
+}
+namePrint("Messi")
