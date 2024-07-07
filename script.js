@@ -68,7 +68,6 @@ console.log(ronaldo); */
 
 //Example 6 circumference of the circle (2*pi*r)
 
-
 /* function circle(r) {
   return 2*3.14*r
 }
@@ -83,14 +82,32 @@ console.log(result.toFixed(2)) */
 const result = circleArea(5)
 console.log(result.toFixed(2)); */
 
-
 /* Function Expession (not Hoisting) */
 
-/* Example 1 */
+// Example 1 
 
-console.log("---Function Expression---");
+/* console.log("---Function Expression---");
 
-const namePrint=function(name){
-    console.log(name);
+const namePrint = function (name) {
+  console.log(name);
+};
+namePrint("Messi"); */
+
+
+// Example 2 
+
+/* const isEvenOdd = function(num){
+    let result=num %2 == 0 ? "Num is Even" : "Num is Odd"
+    console.log(result);
+    return result
 }
-namePrint("Messi")
+console.log(isEvenOdd(27)) */
+
+// Example 3 
+
+/* const maxNum = function(num1,num2,num3){
+    let result= Math.max(num1,num2,num3)
+    console.log(result);
+}
+
+console.log(maxNum(12,53,44)); */
