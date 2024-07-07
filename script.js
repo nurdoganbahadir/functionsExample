@@ -84,7 +84,7 @@ console.log(result.toFixed(2)); */
 
 /* Function Expession (not Hoisting) */
 
-// Example 1 
+// Example 1
 
 /* console.log("---Function Expression---");
 
@@ -93,8 +93,7 @@ const namePrint = function (name) {
 };
 namePrint("Messi"); */
 
-
-// Example 2 
+// Example 2
 
 /* const isEvenOdd = function(num){
     let result=num %2 == 0 ? "Num is Even" : "Num is Odd"
@@ -103,7 +102,7 @@ namePrint("Messi"); */
 }
 console.log(isEvenOdd(27)) */
 
-// Example 3 
+// Example 3
 
 /* const maxNum = function(num1,num2,num3){
     let result= Math.max(num1,num2,num3)
@@ -111,3 +110,27 @@ console.log(isEvenOdd(27)) */
 }
 
 console.log(maxNum(12,53,44)); */
+
+// Example 4
+
+const avgAge = 95;
+
+function agePrint(age) {
+  console.log(
+    "The average remaining life expectancy is",
+    avgAge - age,
+    "years."
+  );
+  if (age < 10) {
+    console.log("Enjoy life.");
+  } else if (age < 20) {
+    console.log("Time for sightseeing!");
+  } else if (age < 60) {
+    console.log("You have to work.");
+  } else if (age < 95) {
+    console.log("You're on pins and needles!");
+  } else {
+    console.log("Are you still alive?");
+  }
+}
+agePrint(19);
