@@ -36,7 +36,7 @@ printName(lastname) */
 numbers(1,2,3,4,5,6,7,8,9,0) */
 
 /* Example 4 Return keyword*/
-function ageCalculate(name, date){
+/* function ageCalculate(name, date){
     console.log("My name is", name,"my age", (2024-date));
     let age = 2024 - date
     return age
@@ -47,4 +47,40 @@ const age = ageCalculate("Ronaldo", 1985)
 
 if (age > 30){
     console.log("You're at the top of soccer.");
+} */
+
+/* Example 5 İf-Return*/
+
+/* function ageCalculate(name, date) {
+  console.log("My name is", name, "my age", 2024 - date);
+  let age = 2024 - date;
+  
+  if(age < 40){
+    return "Play Football"
+  }
+  else {
+    return "Play not."
+  }
 }
+
+const ronaldo=ageCalculate("Ronaldo",1985)
+console.log(ronaldo); */
+
+/* Example 6 circumference of the circle (2*pi*r)*/
+
+
+/* function circle(r) {
+  return 2*3.14*r
+}
+const result = circle(5)
+console.log(result.toFixed(2)) */
+
+/* Example 7 area of the circle*/
+
+/* function circleArea(r){
+    return 3.14*(r*r)
+}
+const result = circleArea(5)
+console.log(result.toFixed(2)); */
+
+/* Example 8 */
