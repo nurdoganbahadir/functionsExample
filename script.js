@@ -225,7 +225,7 @@ console.log(fibo(7)); */
 })(5,4) */
 
 //! CALLBACK FUNCTİON
-function matematikselislem(sayi1, sayi2, islem) {
+/* function matematikselislem(sayi1, sayi2, islem) {
   const sonuc = islem(sayi1, sayi2);
   console.log(sonuc);
 }
@@ -238,4 +238,24 @@ function cıkar(a, b) {
 }
 
 matematikselislem(45, 23, topla);
-matematikselislem(45, 23, cıkar);
+matematikselislem(45, 23, cıkar); */
+
+
+/* function calculator(a,b,op){
+  const sonuc=op(a,b)
+  console.log(sonuc);
+}
+function topla(a,b){
+  return a+b;
+}
+function cikar(a,b){
+  return a-b;
+}
+function bolme(a,b){
+  return a/b;
+}
+function carpma(a,b){
+  return a*b;
+}
+
+calculator(25,35,carpma) */
