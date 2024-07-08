@@ -113,7 +113,7 @@ console.log(maxNum(12,53,44)); */
 
 // Example 4
 
-const avgAge = 95;
+/* const avgAge = 95;
 
 function agePrint(age) {
   console.log(
@@ -133,4 +133,109 @@ function agePrint(age) {
     console.log("Are you still alive?");
   }
 }
-agePrint(19);
+agePrint(19); */
+
+//! ARROW FUNCTİONS
+
+//Example 1
+
+/* 2 Sayının toplamı */
+
+/* const toplam = (a, b) => (result = a + b);
+toplam(5, 6);
+console.log(result); */
+
+//?SİLİNDİRİN HACMİ
+
+/* const silindir =(r,h)=> 3.14*r**2*h
+console.log(silindir(4,5).toFixed(2)); */
+
+// 2 SAYIDAN BÜYÜK OLANI BULMA
+
+/* const big = (a,b)=>Math.max(a,b)
+console.log(big(4,5)); */
+
+//?ASAL SAYI
+
+/* const asal =(num)=> {
+  if (num <= 1){
+      console.log("sayı asal değil");
+    }
+  for(let i = 2; i<num; i++){
+    if(num % i == 0){
+      console.log("sayı asal değil");
+      break
+    } else if(num % num == 0 && num % 1 == 0) {
+      console.log("sayı asaldır");
+      break
+    }
+  } 
+  
+}
+asal(13) */
+
+//!RECURSİON FUNCTİONS
+
+//?N KADAR SAYILARI TOPLAMA
+/* const toplam=(n)=>{
+  if(n<1){
+    return n
+  } else{
+    return toplam(n-1)+n
+  }
+}
+console.log(toplam(8)); */
+
+//?FAKTÖRİYEL BULMA
+/* const toplam = (n) => {
+  if (n === 1) {
+    return n;
+  } else return toplam(n - 1)*n;
+  
+};
+console.log(toplam(3)); */
+
+//?FİBONACCİ DİZİSİ
+/* const fibo=(n)=>{
+  if(n <= 2){
+    return 1
+  }else return fibo(n-1) + fibo(n-2)
+}
+console.log(fibo(7)); */
+
+//? ====================================================
+// ?              FONKSİYONLAR - IIFE
+// ? ====================================================
+
+//**Immediately Invoked Function Expression (IIFE) yani "Hemen Çağrılan Fonksiyon İfadesi" */
+
+/* (function(){
+  console.log("merhaba");
+})() */
+
+//? PARAMETRE GÖNDERME İŞLEMİ
+//**İKİ SAYININ TOPLAMINI BULMAK */
+/* (function(a,b){
+  console.log(a+b);
+})(1,2) */
+
+//**SAYININ ÜSSÜNÜ ALMA */
+/* (function(a,b){
+  console.log(Math.pow(a,b));
+})(5,4) */
+
+//! CALLBACK FUNCTİON
+function matematikselislem(sayi1, sayi2, islem) {
+  const sonuc = islem(sayi1, sayi2);
+  console.log(sonuc);
+}
+
+function topla(a, b) {
+  return a + b;
+}
+function cıkar(a, b) {
+  return a - b;
+}
+
+matematikselislem(45, 23, topla);
+matematikselislem(45, 23, cıkar);
