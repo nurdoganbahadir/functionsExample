@@ -209,15 +209,15 @@ console.log(fibo(7)); */
 
 //**Immediately Invoked Function Expression (IIFE) yani "Hemen Çağrılan Fonksiyon İfadesi" */
 
-/* (function(){
+(function(){
   console.log("merhaba");
-})() */
+})()
 
 //? PARAMETRE GÖNDERME İŞLEMİ
 //**İKİ SAYININ TOPLAMINI BULMAK */
-/* (function(a,b){
+(function(a,b){
   console.log(a+b);
-})(1,2) */
+})(1,2)
 
 //**SAYININ ÜSSÜNÜ ALMA */
 /* (function(a,b){
